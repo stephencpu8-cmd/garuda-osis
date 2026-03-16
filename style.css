@@ -1,0 +1,165 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'Poppins', sans-serif;
+}
+
+/* BACKGROUND */
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+
+background: linear-gradient(-45deg, #95ecb0, #f3f98a);
+background-size:400% 400%;
+
+animation:gradientMove 12s ease infinite;
+}
+
+@keyframes gradientMove{
+
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+
+}
+
+/* CARD */
+
+.container{
+
+background: rgba(255,255,255,0.15);
+backdrop-filter: blur(15px);
+
+padding:35px;
+border-radius:20px;
+
+width:90%;
+max-width:400px;
+
+text-align:center;
+
+color:white;
+
+box-shadow:0 15px 40px rgba(0,0,0,0.25);
+
+}
+
+/* LOGO */
+
+.logo{
+width:70px;
+margin-bottom:10px;
+}
+
+/* TITLE */
+
+h1{
+font-size:28px;
+margin-bottom:5px;
+}
+
+/* TEXT */
+
+.anonim{
+font-size:14px;
+opacity:0.8;
+margin-bottom:20px;
+}
+
+/* INPUT */
+
+select,textarea{
+
+width:100%;
+margin-top:10px;
+
+padding:12px;
+
+border-radius:10px;
+border:none;
+
+font-size:14px;
+
+}
+
+textarea{
+height:120px;
+resize:none;
+}
+
+/* BUTTON */
+
+button{
+
+margin-top:15px;
+padding:12px;
+
+width:100%;
+
+border:none;
+border-radius:12px;
+
+background:linear-gradient(45deg,#2a8d08,#5bd12c);
+
+color:white;
+font-size:16px;
+
+cursor:pointer;
+
+transition:0.3s;
+
+}
+
+button:hover{
+
+transform:scale(1.05);
+
+box-shadow:0 5px 20px rgba(0,0,0,0.3);
+
+}
+
+/* MESSAGE CARD */
+
+.message{
+
+background:rgba(255,255,255,0.2);
+padding:15px;
+border-radius:12px;
+
+margin-top:15px;
+
+text-align:left;
+
+}
+
+.type{
+font-weight:bold;
+margin-bottom:5px;
+}
+
+.text{
+margin-bottom:10px;
+}
+
+.date{
+font-size:12px;
+opacity:0.7;
+}
+
+.success-title{
+
+color:#2a8d08;
+font-weight:600;
+
+}
+
+.success-text{
+
+color:#333;
+margin-top:10px;
+
+}

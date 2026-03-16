@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Kotak Aspirasi OSIS</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<img src="https://smkbagimunegeriku.sch.id/wp-content/uploads/2021/12/cropped-Logo-BN-512x512-1.png" class="logo">
+
+<h1>Kotak Aspirasi</h1>
+<p class="anonim">Sampaikan saran atau keluhan secara anonim</p>
+
+<form id="aspirasiForm"
+action="https://script.google.com/macros/s/AKfycbz423LIrPISp4nnH4HYu1_Ry40cSO5RKeuWwac1odnOSOvxKWyhxx3iyVGlUzBtduF9/exec"
+method="POST">
+
+<select name="jenisaspirasi" required>
+<option value="">Pilih jenis pesan</option>
+<option value="Saran">Saran</option>
+<option value="Keluhan">Keluhan</option>
+</select>
+
+<textarea name="pesanaspirasi" placeholder="Tulis aspirasi kamu di sini..." required></textarea>
+
+<button type="submit">Kirim Aspirasi</button>
+
+</form>
+
+</div>
+
+<script>
+
+document.getElementById("aspirasiForm").addEventListener("submit", function(){
+
+setTimeout(function(){
+window.location.href="success.html";
+},1500);
+
+});
+
+</script>
